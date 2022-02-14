@@ -88,3 +88,14 @@ function hlmWait(){
         alert(value);
     }, 10000);
  }
+ 
+ function forParentSubmit() {
+	var ch1=document.getElementById("form_checked1");
+    ch1.className="unchecked1";
+	
+	var ch2=document.getElementById("form_checked2");
+    ch2.className="unchecked2";
+	
+	var ch3=document.getElementById("form_checked3");
+    ch3.className="unchecked3";
+ }
