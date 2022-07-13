@@ -11,6 +11,21 @@ var test = document.getElementById("change_id");
         }, 3000);
       },true);
 
+window.addEventListener("load", function(event){
+    var main=document.getElementById("main_form")
+    setTimeout(function(){
+        var div = document.createElement('div');
+        div.className="wrap-input1 validate-input";
+
+        main.appendChild(div)
+        var field=document.createElement("input");
+        field.className="input1";
+        field.id="change_wait";
+
+        div.appendChild(field);
+    }, 8000);
+},true);
+
 function showValidate() {
 //CSS Id - change_id -> newValue
 //Find element by Id
