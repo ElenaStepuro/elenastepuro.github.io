@@ -93,6 +93,9 @@ function showValidate() {
 //XPath Descendant::
     var decField=document.getElementById("descendant_change");
     decField.id="newDescendant";
+
+    var waitElement=document.getElementById("change_wait");
+    waitElement.id="newWaitId";
  }
 
  //<!--===============================================================================================-->
