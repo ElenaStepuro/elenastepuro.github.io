@@ -117,3 +117,16 @@ function hlmWait(){
 	var ch3=document.getElementById("form_checked3");
     ch3.className="unchecked3";
  }
+
+ function waitSubmit() {
+     setTimeout(function () {
+         // Здесь мы делаем определенный элемент видимым через его id
+         var newElement = document.createElement("input");
+         newElement.placeholder = "Wait input";
+         newElement.className = "input1"
+         newElement.id = "wait_new_element";
+         var submit = document.getElementById("Wait_Submit");
+         submit.parentNode.appendChild(newElement);
+         initialised = true;
+     }, 8000); // 8 seconds
+ }
